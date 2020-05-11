@@ -49,6 +49,7 @@ def command():
 
 if __name__ == "__main__":
     seed(1)
+    #calling wish function
     wish()
     speak("I am your assistance sir. How may i help you?")
     try:
