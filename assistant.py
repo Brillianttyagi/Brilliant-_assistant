@@ -30,7 +30,7 @@ def wish():
     else:
         speak("Good,Evening Deepanshu Sirr")
     
-
+#wish function
 def command():
     r1 =sr.Recognizer()
     with sr.Microphone() as source:
