@@ -12,7 +12,7 @@ from random import randint
 engine = pyttsx3.init()
 rate = engine.getProperty('rate')
 engine.setProperty('rate',140)
-
+#setting voices
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[1].id)
 
