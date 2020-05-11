@@ -8,6 +8,7 @@ import webbrowser
 from random import seed
 from random import randint
 
+#voice of assistant
 engine = pyttsx3.init()
 rate = engine.getProperty('rate')
 engine.setProperty('rate',140)
