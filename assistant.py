@@ -126,9 +126,6 @@ if __name__ == "__main__":
                 speak("i am very happy to help you please call me again thanks")
                 exit()
         
-            elif "thank" in query:
-                speak("i am very happy to help you please call me again thanks")
-                exit()
             elif "wish" in query:
                 wish()
     except Exception as e:
