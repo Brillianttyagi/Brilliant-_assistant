@@ -16,11 +16,12 @@ engine.setProperty('rate',140)
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[1].id)
 
-
+#speak function
 def speak(text):
     engine.say(text)
     engine.runAndWait()
 
+#wish function
 def wish():
     hour = int(datetime.datetime.now().hour)
     if 12 > hour >= 0:
@@ -30,7 +31,7 @@ def wish():
     else:
         speak("Good,Evening Deepanshu Sirr")
     
-#wish function
+#command
 def command():
     r1 =sr.Recognizer()
     with sr.Microphone() as source:
