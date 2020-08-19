@@ -69,17 +69,17 @@ if __name__ == "__main__":
         
             elif "music" in query:
                 value = randint(1,36)
-                songs = "G:\\fav songs\\new"
+                songs = "music_path"
                 list_of_songs = os.listdir(songs)
                 os.startfile(os.path.join(songs,list_of_songs[value]))
             elif "change song" in query:
                 value = randint(1,36)
-                songs = "G:\\fav songs\\new"
+                songs = "music_path"
                 list_of_songs = os.listdir(songs)
                 os.startfile(os.path.join(songs,list_of_songs[value]))
             elif "song" in query:
                 value = randint(1,36)
-                songs = "G:\\fav songs\\new"
+                songs = "music_path"
                 list_of_songs = os.listdir(songs)
                 os.startfile(os.path.join(songs,list_of_songs[value]))
             elif "exit" in query:
