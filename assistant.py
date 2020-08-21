@@ -11,7 +11,7 @@ from random import randint
 #voice of assistant
 engine = pyttsx3.init()
 rate = engine.getProperty('rate')
-engine.setProperty('rate',140)
+engine.setProperty('rate',200)
 #setting voices
 voices = engine.getProperty('voices')
 engine.setProperty('voice',voices[1].id)
@@ -31,7 +31,7 @@ def wish():
     else:
         speak("Good,Evening Deepanshu Sirr")
     
-#command
+#command for recognisation
 def command():
     r1 =sr.Recognizer()
     with sr.Microphone() as source:
@@ -56,6 +56,7 @@ if __name__ == "__main__":
     try:
         while(True):
             query = command().lower()
+            #checking words in query
             if "wikipedia" in query:
                 speak("searching in wikipedia, Sir")
                 print("searching...")
@@ -132,6 +133,7 @@ if __name__ == "__main__":
         
             elif "wish" in query:
                 wish()
+    #if error occured
     except Exception as e:
         print(e)
         speak("sorry sir i don't understand, ask me another question")  
